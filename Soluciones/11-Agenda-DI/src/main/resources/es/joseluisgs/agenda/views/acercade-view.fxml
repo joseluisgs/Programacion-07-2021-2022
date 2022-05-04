@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml" prefHeight="260.0" prefWidth="480.0" styleClass="background"
+            stylesheets="@../styles/DarkTheme.css" xmlns="http://javafx.com/javafx"
+            fx:controller="es.joseluisgs.agenda.controllers.AcercaDeController">
+    <children>
+        <ImageView fitHeight="117.0" fitWidth="126.0" layoutX="36.0" layoutY="22.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@../images/author.png"/>
+            </image>
+        </ImageView>
+        <Label fx:id="titulo" contentDisplay="CENTER" layoutX="177.0" layoutY="20.0" prefHeight="42.0" prefWidth="286.0"
+               styleClass="label-header" stylesheets="@../styles/DarkTheme.css" text="Acerca De" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="30.0"/>
+            </font>
+        </Label>
+        <Label fx:id="version" contentDisplay="CENTER" layoutX="177.0" layoutY="80.0" prefHeight="18.0"
+               prefWidth="211.0" styleClass="label-bright" text="Version" textAlignment="CENTER"/>
+        <Label fx:id="autor" layoutX="177.0" layoutY="106.0" prefHeight="29.0" prefWidth="286.0"
+               styleClass="label-bright" text="Jose Luis Gonzalez Sanchez" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="20.0"/>
+            </font>
+        </Label>
+        <ImageView fx:id="githubIcon" fitHeight="30.0" fitWidth="30.0" layoutX="186.0" layoutY="144.0"
+                   onMouseClicked="#openGitHub" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../icons/github.png"/>
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </ImageView>
+        <ImageView fx:id="twitterIcon" fitHeight="30.0" fitWidth="30.0" layoutX="186.0" layoutY="185.0"
+                   onMouseClicked="#openTwitter" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../icons/twitter.png"/>
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </ImageView>
+        <Hyperlink fx:id="githubLink" layoutX="222.0" layoutY="147.0" prefHeight="24.0" prefWidth="225.0"
+                   styleClass="label-bright" text="Hyperlink"/>
+        <Hyperlink fx:id="twitterLink" layoutX="222.0" layoutY="188.0" prefHeight="24.0" prefWidth="225.0"
+                   styleClass="label-bright" text="Hyperlink"/>
+        <Button layoutX="403.0" layoutY="215.0" mnemonicParsing="false" onAction="#aceptarAction" text="Aceptar"
+                AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0"/>
+    </children>
+</AnchorPane>

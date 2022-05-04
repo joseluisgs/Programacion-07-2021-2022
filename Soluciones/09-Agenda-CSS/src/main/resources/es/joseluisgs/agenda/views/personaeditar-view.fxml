@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="427.0" prefWidth="505.0" styleClass="background"
+            stylesheets="@../styles/DarkTheme.css" xmlns="http://javafx.com/javafx"
+            fx:controller="es.joseluisgs.agenda.controllers.PersonaEditarViewController">
+    <children>
+        <Label styleClass="label-header" text="Detalle" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0"/>
+        <GridPane layoutY="36.0" prefHeight="296.0" prefWidth="393.0" AnchorPane.leftAnchor="10.0"
+                  AnchorPane.topAnchor="70.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="198.0" minWidth="10.0" prefWidth="96.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="325.0" minWidth="10.0" prefWidth="297.0"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+            </rowConstraints>
+            <children>
+                <Label styleClass="label-bright" text="Nombre:"/>
+                <Label styleClass="label-bright" text="Apellidos:" GridPane.rowIndex="1"/>
+                <Label styleClass="label-bright" text="Calle:" GridPane.rowIndex="2"/>
+                <Label styleClass="label-bright" text="Ciudad:" GridPane.rowIndex="3"/>
+                <Label styleClass="label-bright" text="E-Mail:" GridPane.rowIndex="4"/>
+                <Label styleClass="label-bright" text="Cumpleaños:" GridPane.rowIndex="5"/>
+                <DatePicker fx:id="cumpleañosDatePicker" prefHeight="32.0" prefWidth="304.0" promptText="21/04/2022"
+                            GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+                <TextField fx:id="nombreTxt" prefHeight="32.0" prefWidth="270.0" promptText="nombre"
+                           styleClass="text-field" GridPane.columnIndex="1"/>
+                <TextField fx:id="apellidosTxt" promptText="apellidos" styleClass="text-field" GridPane.columnIndex="1"
+                           GridPane.rowIndex="1"/>
+                <TextField fx:id="calleTxt" promptText="calle" styleClass="text-field" GridPane.columnIndex="1"
+                           GridPane.rowIndex="2"/>
+                <TextField fx:id="ciudadTxt" promptText="ciudad" styleClass="text-field" GridPane.columnIndex="1"
+                           GridPane.rowIndex="3"/>
+                <TextField GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+                <TextField fx:id="emailTxt" promptText="email@email.es" styleClass="text-field" GridPane.columnIndex="1"
+                           GridPane.rowIndex="4"/>
+            </children>
+        </GridPane>
+        <HBox spacing="8.0" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#onAceptarAction" text="Acerptar"/>
+                <Button mnemonicParsing="false" onAction="#onCancelarAction" text="Cancerlar"/>
+            </children>
+        </HBox>
+        <ImageView fx:id="avatarImageView" fitHeight="80.0" fitWidth="80.0" onMouseClicked="#onAvatarAction"
+                   pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+            <image>
+                <Image url="@../images/person.png"/>
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </ImageView>
+    </children>
+</AnchorPane>

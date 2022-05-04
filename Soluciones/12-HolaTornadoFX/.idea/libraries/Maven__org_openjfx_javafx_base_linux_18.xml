@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.openjfx:javafx-base:linux:18">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/18/javafx-base-18-linux.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/18/javafx-base-18-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/18/javafx-base-18-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

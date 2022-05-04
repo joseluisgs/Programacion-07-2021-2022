@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml" prefHeight="450.0" prefWidth="620.0"
+            stylesheets="@../styles/DarkTheme.css" xmlns="http://javafx.com/javafx"
+            fx:controller="es.joseluisgs.agenda.controllers.EstadisticasViewController">
+    <children>
+        <BarChart fx:id="barChart" prefHeight="450.0" prefWidth="620.0" AnchorPane.bottomAnchor="0.0"
+                  AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <xAxis>
+                <CategoryAxis fx:id="ejeX" side="BOTTOM" styleClass="label-bright"/>
+            </xAxis>
+            <yAxis>
+                <NumberAxis side="LEFT" styleClass="label"/>
+            </yAxis>
+        </BarChart>
+    </children>
+</AnchorPane>

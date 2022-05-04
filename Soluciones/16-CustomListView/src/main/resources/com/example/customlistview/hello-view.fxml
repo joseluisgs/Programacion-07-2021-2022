@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.customlistview.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+    <ListView id="listView" fx:id="listView" layoutX="14.0" layoutY="25.0" prefHeight="138.0" prefWidth="256.0" />
+    <Button layoutX="283.0" layoutY="25.0" mnemonicParsing="false" onAction="#defaultButtonClick" prefHeight="25.0" prefWidth="139.0" text="Default" />
+    <Button layoutX="283.0" layoutY="63.0" mnemonicParsing="false" onAction="#cellFactoryButtonClick" prefHeight="25.0" prefWidth="139.0" text="Cell Factory" />
+    <Button layoutX="283.0" layoutY="104.0" mnemonicParsing="false" onAction="#checkboxCellFactoryButtonClick" prefHeight="25.0" prefWidth="139.0" text="Checkbox Cell Factory" />
+</VBox>

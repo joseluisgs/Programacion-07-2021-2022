@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="tornadofx-empty-maven-project" />
+        <module name="tornadofx-empty-project" />
+        <module name="tornadofx-maven-project" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="tornadofx-empty-maven-project" target="1.5" />
+      <module name="tornadofx-empty-project" target="1.5" />
+      <module name="tornadofx-maven-project" target="9" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

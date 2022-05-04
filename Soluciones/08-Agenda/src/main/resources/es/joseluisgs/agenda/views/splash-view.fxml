@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.joseluisgs.agenda.controllers.SplashController">
+    <children>
+        <ImageView fx:id="fondo" fitHeight="300.0" fitWidth="480.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <image>
+                <Image url="@../images/splash.png" />
+            </image>
+        </ImageView>
+      <Label layoutX="279.0" layoutY="25.0" text="AGENDA DAM" textFill="#0e127c">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
